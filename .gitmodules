@@ -4,5 +4,5 @@
 	branch = chore/ziren-v2-stateless
 [submodule "third_party/bitvm-node"]
 	path = third_party/bitvm-node
-	url = https://github.com/blake-pro/bitvm-node.git
-	branch = feat/fetch-state-chain
+	url = https://github.com/GOATNetwork/bitvm-node.git
+	branch = dev

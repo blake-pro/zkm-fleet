@@ -14,16 +14,13 @@ worker's own behaviour is documented in `proof-builder-rpc/README.md` ("Fleet ap
 in the source tree.
 
 Fleet pins the worker in the `third_party/bitvm-node` Git submodule. It tracks
-`feat/fetch-state-chain` of the `blake-pro/bitvm-node` fork and is pinned at
-`152ada4c49418fd7043c1ad95b1e7ea0e6ffe57e`. Once the branch lands in
-`GOATNetwork/bitvm-node`:
+`dev` of `GOATNetwork/bitvm-node` and is pinned at
+`d5dae9e97a322a84db83f47e1794a2f1899d9721`.
 
-1. Switch the submodule URL to `GOATNetwork/bitvm-node`.
-2. Re-pin it to the merged commit.
-
-Initialize it with `git submodule update --init third_party/bitvm-node`. Deployment and
-packaging use the committed pin; never use `git submodule update --remote`. Host and guests
-use Ziren `3cf393cdb2c817a16646481a5d9d761478d3e908`.
+For an existing checkout, run `git submodule sync -- third_party/bitvm-node` to update the
+local URL. Initialize or update it with `git submodule update --init third_party/bitvm-node`.
+Deployment and packaging use the committed pin; never use `git submodule update --remote`.
+Host and guests use Ziren `a4d47079b45eecb244adc27ffa3daaac57de523b`.
 
 ## App identity
 
